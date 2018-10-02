@@ -1,1 +1,1 @@
-# virt-emails
+# emails
