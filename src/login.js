@@ -1,5 +1,5 @@
 const container = require('./container')
-const { separator, space, footer, p } = require('./helpers')
+const { space, footer, p } = require('./helpers')
 
 
 const html = async data => {

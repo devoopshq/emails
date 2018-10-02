@@ -1,6 +1,5 @@
 module.exports = async (html) => {
-  return `
-  <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+  return `<!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
   <!--[if mso]>
     <style>
       * { font-family: sans-serif !important; }
@@ -28,7 +27,7 @@ module.exports = async (html) => {
     table table table { table-layout: auto; }
     /* Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
     a { text-decoration: none;  }
-    /* What it does: Uses a better rendering method when resizing images in IE. */
+    /* Uses a better rendering method when resizing images in IE. */
     img {
         -ms-interpolation-mode:bicubic;
     }
@@ -75,9 +74,9 @@ module.exports = async (html) => {
       }
     }
   </style>
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100% !important;">
-  <tr>
-    <td>${html}</td>
-  </tr>
-</table>`
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100% !important;">
+    <tr>
+      <td>${html}</td>
+    </tr>
+  </table>`
 }

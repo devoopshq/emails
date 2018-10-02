@@ -1,4 +1,4 @@
-import index from './verify.js'
+import signup from './signup.js'
 
 const data = {
   username: 'username',
@@ -6,5 +6,5 @@ const data = {
   email: 'you@domain.com'
 }
 
-index(data)
+signup(data)
   .then(x => document.body.innerHTML = x )
